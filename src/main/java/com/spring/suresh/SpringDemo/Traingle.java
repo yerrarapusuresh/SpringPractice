@@ -3,6 +3,12 @@ package com.spring.suresh.SpringDemo;
 public class Traingle {
 	
 	private String type;
+	private int height;
+	
+	public Traingle(String type, int height) {
+		this.type = type;
+		this.height = height;
+	}
 	
 	public String getType() {
 		return type;
@@ -11,7 +17,7 @@ public class Traingle {
 		this.type = type;
 	}
 	public void draw() {
-		System.out.println("draw traingle "+type);
+		System.out.println("draw traingle "+type+" height "+height);
 	}
 
 }
