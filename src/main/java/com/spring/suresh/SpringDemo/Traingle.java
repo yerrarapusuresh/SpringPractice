@@ -2,28 +2,36 @@ package com.spring.suresh.SpringDemo;
 
 public class Traingle {
 	
-	private String type;
-	private int height;
+	private Point pointA;
+	private Point pointB;
+	private Point pointC;
 	
-	public Traingle(String type) {
-		this.type = type;
-	}
-	public Traingle(int height) {
-		this.height = height;
-	}
-	public Traingle(String type, int height) {
-		this.type = type;
-		this.height = height;
+		public Point getPointA() {
+		return pointA;
 	}
 
-	public String getType() {
-		return type;
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
 	}
-	public void setType(String type) {
-		this.type = type;
+
+	public Point getPointB() {
+		return pointB;
 	}
-	public void draw() {
-		System.out.println("draw traingle "+type+" height "+height);
+
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
+	}
+
+	public Point getPointC() {
+		return pointC;
+	}
+
+	public void setPointC(Point pointC) {
+		this.pointC = pointC;
+	}
+
+		public void draw() {
+			System.out.println(pointA+"  "+pointB+" "+pointC);
 	}
 
 }
