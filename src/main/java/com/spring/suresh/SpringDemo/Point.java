@@ -24,7 +24,7 @@ public class Point {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "X : "+x+" Y: "+y;
+		return "(X : "+x+" Y: "+y+")";
 	}
 
 }
