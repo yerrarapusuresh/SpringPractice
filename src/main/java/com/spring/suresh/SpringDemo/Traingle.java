@@ -4,19 +4,31 @@ import java.util.List;
 
 public class Traingle {
 	
-	List<Point> points;
+	private Point pointOne;
+	private Point pointTwo;
+	private Point pointThree;
 	
-		public List<Point> getPoints() {
-		return points;
+	public Point getPointOne() {
+		return pointOne;
 	}
-
-	public void setPoints(List<Point> points) {
-		this.points = points;
+	public void setPointOne(Point pointOne) {
+		this.pointOne = pointOne;
 	}
-
-		public void draw() {
-			for(Point point : points)
-				System.out.println(point);
+	public Point getPointTwo() {
+		return pointTwo;
+	}
+	public void setPointTwo(Point pointTwo) {
+		this.pointTwo = pointTwo;
+	}
+	public Point getPointThree() {
+		return pointThree;
+	}
+	public void setPointThree(Point pointThree) {
+		this.pointThree = pointThree;
+	}
+	
+	public void draw() {
+		System.out.println("( "+pointOne+" "+pointTwo+" "+pointThree+" )");
 	}
 
 }
